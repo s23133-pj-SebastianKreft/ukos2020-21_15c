@@ -1,0 +1,33 @@
+
+
+1. Uruchamiam terminal
+2.Komenda ls sprawdzam zawartosc katalogu
+3. Uzywam komendy pwd -> jestem w katalogu /home/ubuntu. W interfejsie graficznym widac te same katalogi co w konsoli
+4.Uzywam komendy cd Desktop
+5.Uzywam komendy pwd -> jestem w katalogu /home/ubuntu/Desktop
+6. Uzywam komendy ls -> znajduja sie tam pliki adding-packages-permanently-info.txt oraz  passwords-info.txt
+7.Uzywajac interfejsu graficznego rowniez widze te dwa pliki
+8. Za pomoca komendy ls /home/ubuntu wyswietlam zawartosc katalogu domowego
+9.Uzywam komendy cd ../Pictures -> przechodze do katalogu Obrazy
+10. Za pomoca komendy pwd sprawdzam, ze jestem w katalogu /home/ubuntu/Pictures
+11. Uzywam sciezki ././././././ -> dalej jestem w katalogu Pictures
+12. Uzywam komendy cd home/ubuntu -> jestem w katalogu domowym
+13. Po wpisaniu komendy cd /root wyskoczyl komunikat o odmowie dostepu. Dzieje sie tak poniewaz w tym przypadku uzytkownik nie ma uprawnien do "wykonywania" katalogu root
+14.Po uzyciu kombinacji klawiszy ctrl+alt+F1 przechodzimy do trybu konsolowego. Po uzyciu ctrl+alt+F7 przechodzimy z powrotem do trybu graficznego.
+
+
+1. Przy uzyciu komend cd oraz mkdir utworzono katalogi:
+ukos
+ | \  katalog
+ |		| \ 	katalog2
+ |		 \	katalog3
+  \klamka
+
+2. Uzywam komendy cd klamka nastepnie touch zajecia.txt zajecia2.log inny.txt nowy.txt
+3. Przechodze do katalogu ukos i uzywam komendy mkdir -p ukos/to/jest/dluga/nazwa
+4. Uzywam komendy cd ukos/to/jest/dluga/nazwa -> touch dane.txt
+5. Uzywam komendy cd /home/ubuntu/ukos/klamka -> rm *.txt
+6. Uzywam komendy rmdir katalog/katalog2
+7. Uzywam komendy rm -r klamka'
+
+
