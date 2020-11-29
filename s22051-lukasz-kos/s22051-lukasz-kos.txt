@@ -15,3 +15,16 @@ Still needs practice, recalling all the details isn't effective.
 * Operator > w poleceniu echo zapisuje tresc calego komunikatu jako plik, natomiast operator >> powoduje, ze tresc komunikatu zostaje zapisana w pliku w nowej linii, bez usuwania poprzedniej zawartosci pliku.
 * Minimalne uprawnienie, ktore pozwoli na zobaczenie strony internetowej dla katalogu domowego, folderu public_html oraz pliku .html to uprawnienia do odczytu i wykonania dla pozostalych osob (005).
 * Podczas tworzenia nowego pliku wartosc standardowa dostepu (777 dla katalogu i 666 dla pliku) jest ograniczana przez maske, ktora wywolujemy komenda umask. Wartosc uprawnienia pliku jest koniunkcja logiczna (AND) binarnej wartosci domyslnej i negacji maski (rowniez w postaci binarnej).
+
+21-22.XI.2020
+* Polecenie grep jest używane do filtrowania wynikow. Moze byc uzywane poprzez potoki.
+* > pozwala na przekierowanie danych wyjsciowych z pliku/programu do danych wejsciowych z pliku/programu poprzez nadpisanie.
+* Polecenie ps wyswietla liste procesow. ps -a wyswietla wszystkie procesy poza tymi zwiazanymi z terminalem; ps x wyswietla wszystkie procesy, ktorych jestes wlascicielem (bez terminala); ps aux drukuje wszystkie procesy w systemie. ps -u nazwa_uzytkownika drukuje wszystkie procesy uzytkownika o nazwie nazwa_uzytkownika.
+* komenda kill sluzy do zabijania procesow o okreslonym numerze PID, ktory mozna wyswietlic komenda ps. killall sluzy do ubijania procesow o okreslonej nazwie.
+* Skrot Ctrl+C wysyla sygnal zakonczenia przesylania danych. Innymi słowy dane, które aktualnie wpisujemy nie zostaną zapisane/wykorzystane.
+* Skrot Ctrl+D wysyla sygnal zakonczenia strumienia wejsciowego. Wowczas wspisywane dane zostana dodatkowo zapisane/wykorzystane.
+* Skrot Ctrl+Z sluzy do zatrzymywania programow uruchomionych w terminalu.
+* Domyslnie programy uruchomione w terminalu sa uruchamiane w pierwszym planie (czyli terminal jest zablokowany). Aby moc korzystac z terminala nalezy program zatrzymac, nastepnie wyswietlic liste programow uruchomionych poprzez teminal (jobs), znalezc interesujacy nas numer programu, po czym uruchomic okreslony program poleceniem bg %numer 
+* Mozna od razu uruchomic program w tle poprzez komende nazwa_programu &
+* Dalsze szczegoly tu: https://www.notion.so/kosiarz/Linux-eaed4ccbbc8d4ad686efc4a93fd84565
+
