@@ -1,0 +1,16 @@
+1. Utworzenie struktury katalogow i plikow przy pomocy komend mkdir oraz touch
+  - modyfikacja przy pomocy komendy chmod uprawnin do odczytu, zapisu i wykonywania dla uzytkownika, grupy i pozostalych (chmod g-r; chmod u=wrx, chmod 000; chmod o+w)
+ - po utworzeniu pliku jajko.txt w katalogu kolegi (po przydzieleniu praw dostepu do katalogu), nie moze on go usunac - nie ma kategorii user
+
+2. Po usunieciu praw dostepu do biezacego katalogu przy pomocy komendy chmod 000 brak mozliwosci przeniesienia sie do niego za pomoca sciezki bezwzglednej i wzglednej
+- jezeli katalog nadrzedny ma usuniete prawa dostepu to nie dostaniemy sie do niego z katalogu podrzednego
+- zeby zadzialala komenda chmod po usunieciu praw dostepu musimy jej uzyc bedac w katalogu nadrzednym ktory ma prawa dostepu
+
+3. utworzono plik tekstowy i przydzielono grupie uprawnienia do jego zapisu
+- komenda echo z ">" powoduje utworzenie pliku i wpisanie do niego komunikatu lub zastapienie juz istniejacego pliku
+- komenda echo z ">>" powoduje dopisanie tekstu do istniejacego pliku
+
+4. W katalogu public_html utworzono plik strona.html
+- zeby zawartosc pliku byla widoczna w przegladarce do katalogu domowego, katalogu public_html oraz pliku strona.html nalezy dodac wszystkim uprawnienia do odczytu i wykonania 
+
+
