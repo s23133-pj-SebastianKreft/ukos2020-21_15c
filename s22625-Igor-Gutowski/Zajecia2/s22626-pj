@@ -1,0 +1,29 @@
+19.11.2020
+Drogi pamietniczku na kolejnych zajeciach nauczylem sie:
+tworzyc drzewa katalogow oraz operowac na nich;
+
+ukos
+    ├── dane.txt
+    ├── katalog
+    │   ├── katalog2
+    │   └── katalog3
+    ├── klamka
+    │   ├── inny.txt
+    │   ├── nowy.txt
+    │   ├── zajecia2.log
+    │   └── zajecia2.txt
+    └── ukos
+        └── to
+            └── jest
+                └── dluga
+                    └── nazwa
+                        └── dane.txt
+
+tworzyc oraz uzywac plikow wspoldzielonych;
+nadawać i odbierac prawa dostępu do pliku lub katalogu;
+tworzyc strone internetowa w swoim katalogu za pomoca edytora nano;
+
+├── public_html
+│   └── strona.html
+└── ukos
+
