@@ -1,0 +1,48 @@
+  410  ls -a
+  411  ls -a | grep D
+  412  ls -a | grep D > ListaPlikowZLiteraD.txt
+  413  nano ListaPlikowZLiteraD.txt 
+  414  ls -a
+  415  ps
+  416  ps -a
+  417  ps x
+  418  ps aux
+  419  ps 
+  420  ps -a
+  421  ps x
+  422  kill 990
+  423  man sigkill
+  424  man SIGKILL
+  425  SIGKILL
+  426  geny
+  427  killall
+  428  killall -u
+  429  man killall
+  430  killall -s
+  431  killall -u -s
+  432  killall -u ubuntu
+  433  cay
+  434  cat
+  435  cat > wynik1.txt
+  436  cd wynik1
+  437  ls -a
+  438  nano wynik1.txt 
+  439  cat > wynik1.txt 
+  440  nano wynik1.txt 
+  441  gimp
+  442  sudo apt install gimp
+  446  sudo apt install gimp --fix-missing
+  456  sudo apt update
+  457  sudo apt install gimp
+  458  gimp
+  459  bg
+  460  gimp
+  461  bg
+  462  fd
+  463  fg
+  464  gimp &
+  465  ps x
+  466  kill 16907
+  467  geany&
+  468  fg
+

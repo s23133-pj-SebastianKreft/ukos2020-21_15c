@@ -1,0 +1,17 @@
+  315  ls
+  316  pwd
+  317  cd ./Desktop
+  318  pwd
+  319  ls 
+  320  echo wynik jest ten sam 
+  321  ls ./../
+  322  cd ./../Pictures
+  323  pwd
+  324  cd ././././././
+  325  cd ubuntu
+  326  cd /home/ubuntu
+  327  cd/root
+  328  cd /root
+  329  echo po wykonaniu ostatniego zadania maszynka wirtualna przestaje działać choć powinna przełączyc mnie na tryb wiersza
+  330  history
+

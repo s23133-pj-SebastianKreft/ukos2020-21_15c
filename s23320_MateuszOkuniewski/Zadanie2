@@ -1,0 +1,16 @@
+1. Stworzyłem strukturę katalogów i plików, sprawdziłem rożne ustawienia upra-
+nień. Otworzyłem katalog innego studenta, mogłem tylkozobaczyć co w nim jest 
+nie mogłem usuwać plików ani dodawć ponieważ nie miałem uprawnienia write w
+grupie.Nie mogłemn stworzyć pliku u innego studenta tak jak jest w zadaniu
+ponieważ miał on problem z odstępem do serwera, ale rozumiem jak to zrobić i
+jaki będzie tego wynik.
+
+2. Po stworzeniu struktury katalogów kat1/kat2 i po nadaniu kat1 praw 000 nie 
+można wejśc do niego i jedynym sposobem na powrót jest użycie ścieżki bezwzględnej.
+
+3.Tego zadania nie zdołałem wykonac z powod powyższego, ale wiem że dzięki temu 
+można w prosty sposób komunikować się, a gdy użyjemy komendy watch widzimy w czasie 
+rzeczywistym co jest do niego wpisywane.
+    
+4.Po stworzeniu strony nie można było jej zobaczyc trzeba było nadać prawa rx
+katalogom domowy i public_html.
