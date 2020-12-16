@@ -40,7 +40,7 @@ tojuzplik.txt
 
 nadpisanie do pliku wynikow wyszukiwania z wylistowania ls -a 
 
-s22625@szuflandia:~$ ls -a | grep p > ListkaPlikowZLiterkap.txt
+s22625@szuflandia:~$ ls -a | grep p > ListaPlikowZLiterkap.txt
 s22625@szuflandia:~$ cat ListaPlikowZLiterkap.txt
 ListaPlikowZLiterkap.txt
 plik123.txt
