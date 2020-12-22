@@ -1,0 +1,29 @@
+homework
+-ls
+-pwd 
+-cd Desktop
+-pwd
+-ls 
+-same stuff
+-ls ../
+-cd ../Pictures
+-pwd
+-nothing 
+-cd ../home
+-cd /root 
+-tty1 ctrl+alt+f1 -> back ctrl+f7
+---------------------------------
+-mkdir ukos
+-ukos/katalog uos/klamka
+-mkdir ukos/katalog/katalog2 ukos/katalog/katalog3
+-cd ukos/klamka
+-touch zajecia2.txt 
+-touch zajecia2.log
+-touch inny.txt
+-touch nowy.txt
+-mkdir -p this/is/long/name
+-cd this/is/long/name
+-touch dane.txt
+-rmdir katalog2
+-rm ../klamka/*
+rmdir ../klamka
