@@ -1,0 +1,18 @@
+mkdir -p pozwala tworzyc struktury katalogow
+np mkdir -p to/jest/przyklad/katalogow
+
+sciezka zwzgeldna to np cd folder1/plik
+sciezka bezwzgeldna to np cd /home/PJWSTK/s22868/folder1/plik
+
+mv - przenoszenie plikow/katalogow
+np mv folder1/plik folder2/plik
+
+kill - wysylanie sygnalu do procesu
+np kill PID - wysyla sygnal do procesu o PID
+
+grep - filtorwanie 
+np ps aux | grep root - pokazuje wszystkie procesy w ktorych wystepuje slowo root
+
+chmod - ustawia dostep do plikow lub katalogow
+np chmod 777 folder1 - ustawia wszystkim dostep do folder1 7 odpowiadaja nastepujaco: wlasicicel, grupa, inni
+
