@@ -1,3 +1,51 @@
-14.12.2020
+5.12.2020
 Drogi pamietniczku na kolejnych zajeciach nauczylem sie:
+
+tworzyc drzewo katalogow za pomoca jednej komendy
+s22625@szuflandia:~$ mkdir -p to/jest/dluga/nazwa
+s22625@szuflandia:~$ tree
+.
+├── katalog123
+│   └── katalog1234
+├── ListaPlikowZLiterkaD.txt
+├── nowy1
+├── nowy2
+├── plik123.txt
+├── public_html
+│   └── strona.html
+├── to
+│   └── jest
+│       └── dluga
+│           └── nazwa
+
+
+rozrozniac sciezki wzgledne i bezwzgledne
+
+bezwzgledna
+s22625@szuflandia:~$ cd ./to/jest/dluga/nazwa
+s22625@szuflandia:~/to/jest/dluga/nazwa$
+
+wzgledna
+s22625@szuflandia:~$ cd to
+s22625@szuflandia:~/to$ cd jest
+s22625@szuflandia:~/to/jest$ cd dluga
+s22625@szuflandia:~/to/jest/dluga$ cd nazwa
+s22625@szuflandia:~/to/jest/dluga/nazwa$
+
+wylistowac pliki badz katalogi w danym katalogu poprzez poczatek ich nazwy
+s22625@szuflandia:~$ ls
+katalog123  ListaPlikowZLiterkaD.txt  nowy1  nowy2  plik123.txt  public_html  to  tojuzplik.txt  ukos  wynik1.txt  wynik2.txt
+s22625@szuflandia:~$ ls -a | grep now
+nowy1
+nowy2
+s22625@szuflandia:~$
+
+przekazac wynik wyszukiwania w katalogu do pliku
+s22625@szuflandia:~/testowy$ ls -a | grep pl > wynik.txt
+s22625@szuflandia:~/testowy$ cat wynik.txt
+plik1
+plik2
+plik3
+s22625@szuflandia:~/testowy$
+
 
