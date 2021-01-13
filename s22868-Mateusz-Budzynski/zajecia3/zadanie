@@ -1,0 +1,44 @@
+1. Komenda ps wyswietla liste procesow
+
+ps a -wyswielta liste wszystkich procesow nawet tych ktorych nie jestem wlasicicelem
+ps aux - wszystkie procesy uzywajac skladni BSD
+ps -aux - wyswietla procesy uzytkownika x z parametrem -a jesli uzytkownik nie istnieje wykona sie ps aux 
+
+procesy mozna filtorwac przy uzyciu np grep
+
+ps -a | grep root - wszystkie procesy roota
+ps -a | grep vim - wszystkie otwarte procesy vima
+
+2. PID to process id uzywa sie go miedzy innymi z poleceniem kill
+kill PID - wysyła sygnał do procesu żeby go zatrzymać/zabić
+killall nazwaProcesu np killall firefox - wysyła sygnał do wszystkich procesow firefoxa
+
+3. ctrl + d zamyka program z wysłaniem strumienia wejscia
+ctrl + c zamyka program natychmiast 
+dlatego ctrl + c
+
+cat > test1
+sprawdzam^c
+
+nie zapisze tekstu do pliku test1
+a ctrl + d
+
+cat > test2
+sprawdzam^D
+
+zapisze tekst do pliku test2
+mozna to porownac z wychodzeniem z aplikacji na windowsie - ctrl+c zamknij bez zapisywania / ctrl +d zapisz i wyjdz
+
+4. Ctrl + z
+stopuje program - Wysyla aktywne okno do tła(bg) mozna to tez zrobic uzywajac polecenie &
+bg - startuje proces z tla po uzyciu ctrl + z
+jobs - wyswietla wszystkie procesy w tle
+fg - wrzuca proces na pierwszy plan
+
+5. tar sluzy do rozpakowywania i pakowania archiwow
+np tar -xvf ./plik.tar . - rozpakuje plik w miejscu gdzie sie znajduje obecnie
+tar -xvf ./plik.tar /home/pliki - rozpakuje do folderu pliki
+tar -cvf ./plik.tar /home/pliki - stworzy archiwum z folderu pliki
+
+6.wget - uzywany do pobierania rzeczy z internetu lub calych stron
+wget https://example.com - pobierze cala strone example.com
