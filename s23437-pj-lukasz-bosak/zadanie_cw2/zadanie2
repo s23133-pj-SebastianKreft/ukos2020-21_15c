@@ -1,0 +1,46 @@
+ćw 2 
+
+zad 1. 
+
+	Utworzyłem nieduża strukturę kat za pomoca mkdir: zad3/New/New2 , orak plik tekstowy w kat New2 tekstowy.txt
+
+ubuntu@bss-ubu1804:~/Desktop/zad3$ chmod u-rwx New
+ubuntu@bss-ubu1804:~/Desktop/zad3$ ls -l
+total 4
+d--------- 3 ubuntu ubuntu 4096 Jan 15 19:49 New
+
+za pomoca komendy chmod odebrałem wszelkie uprawnienia do kat New teraz nie moge wjesc do kat New2
+
+ubuntu@bss-ubu1804:~/Desktop/zad3$ cd New/New2
+bash: cd: New/New2: Permission denied
+
+za pomoca komendy chmod 755 ustawilem standardowe ustawienia dostępy dla kat New
+
+ubuntu@bss-ubu1804:~/Desktop/zad3$ chmod 755 New
+ubuntu@bss-ubu1804:~/Desktop/zad3$ ls -l
+total 4
+drwxr-xr-x 3 ubuntu ubuntu 4096 Jan 15 19:49 New
+
+spowrotem moge dostac sie do kat New
+
+ubuntu@bss-ubu1804:~/Desktop/zad3$ cd New
+ubuntu@bss-ubu1804:~/Desktop/zad3/New$ 
+
+zad 2.
+
+utworzyłem na swoim koncie strukture kat:
+
+zad3
+    └── kat1
+        └── kat2
+            └── tekst1
+usunalem wszelkie uprawnienia do kat kat1
+
+s23437@szuflandia:~/zad3$ chmod a-rwx kat1
+s23437@szuflandia:~/zad3$ ls -l
+razem 4
+d--------- 3 s23437 pjwstk 4096 sty 15 19:46 kat1
+
+nie moge teraz do niego wejsc anie przez niego "przejsc" brak dostępu.
+
+zad 3minimalne prawa dpostepu, ktore trzeba przydzielic to chmod a+rx.
