@@ -1,0 +1,103 @@
+21.11.2020
+Drogi pamietniczku na kolejnych zajeciach nauczylem sie:
+
+przekierowywanie do plikow (nadpisywanie/dopisywanie)
+
+s22625@szuflandia:~$ ls
+ListaPlikowZLiterkaD.txt  public_html  ukos
+s22625@szuflandia:~$ touch plik123.txt
+s22625@szuflandia:~$ cat plik123.txt
+s22625@szuflandia:~$ echo test > plik123.txt
+s22625@szuflandia:~$ cat plik123.txt
+test
+s22625@szuflandia:~$ echo "dopisuje do test" >> plik123.txt
+s22625@szuflandia:~$ cat plik123.txt
+test
+dopisuje do test
+
+s22625@szuflandia:~$ cat toplik.txt
+cat: toplik.txt: Nie ma takiego pliku ani katalogu
+s22625@szuflandia:~$ cat toplik.txt 2> tojuzplik.txt
+s22625@szuflandia:~$ cat tojuzplik.txt
+cat: toplik.txt: Nie ma takiego pliku ani katalogu
+s22625@szuflandia:~$ cat toplik2.txt 2>> tojuzplik.txt
+s22625@szuflandia:~$ cat tojuzplik.txt
+cat: toplik.txt: Nie ma takiego pliku ani katalogu
+cat: toplik2.txt: Nie ma takiego pliku ani katalogu
+
+wylistowanie ukrytych pilikow i katalog / wyszukanie nazw z literka p
+
+s22625@szuflandia:~$ ls -a
+.   .bash_history  .bashrc   ListaPlikowZLiterkaD.txt  plik123.txt  public_html    ukos
+..  .bash_logout   .lesshst  .nano                     .profile     tojuzplik.txt
+s22625@szuflandia:~$
+
+s22625@szuflandia:~$ ls -a | grep p
+plik123.txt
+.profile
+public_html
+tojuzplik.txt
+
+nadpisanie do pliku wynikow wyszukiwania z wylistowania ls -a 
+
+s22625@szuflandia:~$ ls -a | grep p > ListaPlikowZLiterkap.txt
+s22625@szuflandia:~$ cat ListaPlikowZLiterkap.txt
+ListaPlikowZLiterkap.txt
+plik123.txt
+.profile
+public_html
+tojuzplik.txt
+
+wyswietlac procesy komendami ps / ps -a / ps x / ps aux
+
+s22625@szuflandia:~$ ps
+  PID TTY          TIME CMD
+17837 pts/0    00:00:00 shell
+18979 pts/0    00:00:00 ps
+s22625@szuflandia:~$ ps -a
+  PID TTY          TIME CMD
+18980 pts/0    00:00:00 ps
+s22625@szuflandia:~$ ps x
+  PID TTY      STAT   TIME COMMAND
+17836 ?        S      0:00 sshd: s22625@pts/0
+17837 pts/0    Ss     0:00 -shell
+18981 pts/0    R+     0:00 ps x
+s22625@szuflandia:~$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1  57336  5064 ?        Ss   lis13   1:11 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    lis13   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    lis13  42:50 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   lis13   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    lis13   8:30 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    lis13   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    lis13   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S<   lis13   0:00 [lru-add-drain]
+root        11  0.0  0.0      0     0 ?        S    lis13   0:06 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    lis13   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    lis13   0:00 [kdevtmpfs]
+root        14  0.0  0.0      0     0 ?        S<   lis13   0:00 [netns]
+
+rozncia pomiedzy ctrl+c a ctrl+d
+
+s22625@szuflandia:~$ cat > wynik1.txt
+witaj^C
+s22625@szuflandia:~$ cat wynik1.txt
+s22625@szuflandia:~$ cat > wynik2.txt
+witajs22625@szuflandia:~$ cat wynik2.txt
+witajs22625@szuflandia:~$
+
+zatrzymywanie procesu i przeniesienie go do tla
+
+s22625@szuflandia:~$ cat >> wynik1.txt
+test^Z
+[1]+  Zatrzymano              cat >> wynik1.txt
+s22625@szuflandia:~$ fg
+cat >> wynik1.txt
+^C
+s22625@szuflandia:~$ cat wynik1.txt
+witaj
+s22625@szuflandia:~$
+
+tar -- pakowanie i rozpakowywanie archiwow
+wget -- pobranie strony albo pliku z internetu
+
