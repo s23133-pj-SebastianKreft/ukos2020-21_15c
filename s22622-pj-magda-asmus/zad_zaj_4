@@ -1,0 +1,37 @@
+05.12.2020  Powtórzenie materiału
+
+1.
+ścieżka względna : cd ../../../kot/ma/ale
+ścieżka bezwzględn : cd ~/tmp/ukos/kot/ma/ale
+
+2.
+mkdir -p ../../../..kot/ma/ale/jan/kowalski
+
+3.
+mv mv ../../../kot/ma/ale ~/tmp/ukos/ala/i
+
+4.
+kill "PID"
+
+5.
+ls|grep al*
+
+6.
+chmod 751 ala
+chmod rwxr-x--x
+
+7. 
+ls >plik
+
+8.
+nie mam uprawnien do write
+skończyła mi sie pamięc
+
+9. 
+TAB
+
+10.
+& przy uruchamianiu 
+Ctrl+Z,  bg
+
+
