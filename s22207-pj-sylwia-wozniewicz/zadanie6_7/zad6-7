@@ -1,0 +1,18 @@
+
+Uruchamiamy Powershella
+
+Przy użyciu Komendy Set-ExecutionPolicy Bypass mozna korzystać ze skryptów
+
+Pomoc: Get-Help Get-ExecutionPolicy
+
+Komedna Get-ExecutionPolicy spawrdzamy ExecutionPolicy, otrzymujemy Bypass
+
+Za pomocą komendy Get-Module -ListaAvaible można zapisać listę poleceń do podanego pliku
+
+Start-BitsTransfer -Source link-pobieranie grafiki z internetu
+
+Za pomocą Call=& uruchomiono notatnik
+
+Get-PSDrive wyświetla listę dysków
+
+Do mierzenia czasu służy Measure-Command

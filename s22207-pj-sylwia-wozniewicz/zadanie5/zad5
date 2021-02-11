@@ -1,0 +1,7 @@
+Na tych zajęciach zapoznaliśmy się z licencjami GNU/GPL, LGPL, BSD,Apache
+o edytorach nano, vi, mcedit i uruchamianych w okienkach geany, gedit, jedit, atomo,io i sublime text oraz system kontroli wersji.
+
+Po wpisaniu #include <stdio.h> zmienił sie kolor na różowy,
+int i char na kolor zielony.
+return i for na kolor czerwony.
+ctrl+spacja powinno uzupełnić komendę, działa w geany
