@@ -1,0 +1,12 @@
+1) ścieżka względna: cd ../../../kot/ma/ale
+  scieżka bezwzględna: cd /home/ubuntu/kropa/kot/ma/ale
+2) mkdir -p /home/ubuntu/kropa/kot/ma/ale/jan/kowalski
+3) mv /home/ubuntu/kropa/kot/ma/ale /home/ubuntu/kropa/ala/i
+4) kill
+5) ls -la | grep al
+6) chmod 751
+7) ls -la > plik
+8) moze odebrano mi prawa dostepu albo dla calej grupy
+9) strzalka w gore
+10)  za pomocą &
+     ctrl+z  i użyć polecenia bg zeby działał w t

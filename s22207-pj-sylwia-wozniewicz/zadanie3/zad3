@@ -1,0 +1,21 @@
+zadanie 1
+
+ ps - wyswietla liste procesow
+ ps -a - wyswietla procesy poza tymi zwiaznamymi z terminalem
+ ps x - wyswietla procesy ktorych jestesmy wlascicielem
+ ps aux - wyświetla wszystkie procesy w systemie
+
+zadanie 2
+komenda kill all zamyka wszystkie uruchomione programy
+
+zadanie 3
+ctrl + c przerywa działanie programu
+ctrl+c - dzialanie programu zostaje przerwane i w pliku nic sie nie pojawia
+ctrl+d - w pliku pojawia się witaj
+
+
+zadanie 4
+ctrl+z zatrzymuje program
+fg - powoduje powrót programu na pierwszy plan, możemy go zamknąć ctrl+c
+komendy gimp &, gedit &, geany & - uruchamiają te programy w tle
+komenda jobs wyświetla listę procesów
