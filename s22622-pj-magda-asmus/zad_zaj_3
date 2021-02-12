@@ -1,0 +1,52 @@
+21.11.2020  ZAJECIA Z PROCESÓW I STRUMIENI:
+
+1.
+ps 
+report a snapshot of the current processes.
+
+ps -a
+Select all processes except both session leaders and processes not associated with a terminal.
+
+ps x
+Lift the BSD-style "must have a tty" restriction, which is imposed upon the set of all processes when some BSD-style (without "-") options are used or when the ps personality setting is BSD-like.  The set of processes selected in this manner is in addition to the set of processes selected by other means.  An alternate description is that this option causes ps to list all processes owned by you (same EUID as ps), or to list all processes when used together with the a option.
+
+ps aux
+To see every process on the system using BSD syntax
+ 
+
+Znaki w kolumnie TTY oznaczają że dany proces nie posiada terminala TTY , czyli najprawdopodobniej nie był onpotrzebny (ten terminal)  :D
+
+Procesy jakie wyświetlamy mozna filtrowac przy pomocy "grep" np. :
+ps -a | grep root - wyświetli wszystkie procesy roota
+
+2.
+
+PID - to skrót od process ID
+kill- wysyła sygnał zakończenia procesu
+
+Łącząc powyższe możemy wykonać komendę która wyłaczy dany proces na podstawie jego ID
+kill "ID"
+
+killall to komenda pozwalajaca wyłaczyc kilka procesów na raz np:
+killall firefox - zamknie wszystkie okna firefoxa
+
+3. 
+Ctrl+C - wyłączenie aktywnego programu w terminalu  
+Ctrl+D - zakończenie strumienia wejściowego
+
+Efekt jest więc taki że Ctrl+C wyjdzie nie zapisując wprowadzonych wcześniej zmian a w przypadku Ctr+D zmiany zostana utrwalone.
+
+4.
+Ctrl +Z - zatrzymuje bierzacy proces i wysyła go do tła, czyli taki program przestaje odpowiadać na cokolwiek
+bg - pozwala uruchomić zatrzymany wcześniej procesu w tle (takie procesy w tle możemy wyświetlić za pomoca "jobs")
+fg - przenosi proces do forground tzn na pierwszy plan 
+Procesy można otworzyć odrazu w tle służy do tego znak & na końcu wywołamnia np:
+gimp &
+
+5. 
+tar - type archiver np:
+tar -xvf ./plik.tar - rozpakuje plik tam gdzie sie on teraz znajduje
+
+korzysta z gzip i bzip2 jako metody kompresji
+gzip - szybszy ale słabiej kompresuje
+bzip2 - wolniejszy , kompresuje mocniej

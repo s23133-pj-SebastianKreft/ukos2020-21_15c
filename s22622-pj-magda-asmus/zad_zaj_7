@@ -1,0 +1,41 @@
+30.01.2021   Ćwiczenia z PowerShella (część 1 z 2)
+
+Na zajęciach realizujemy zadania ze skryptu "Wprowadzenie do podstaw PowerShell-a"
+
+* Najpierw zmieniam ExecutionPolicy. W tym celu uruchamiam PS jako admin i ustawiam Set-ExecutionPolicy Bypass.
+* Wracam do konta zwykłego urzytkownika
+ 
+* Sprawdzam jak działa pomoc w PS
+	Get-Help Get-ExecutionPolicy
+* Można też sprawdzić przykłady użycia 
+	Get-Help Get-ExecutionPolicy -Examples
+
+* Aby poznać wszystkie dostępne w danej chwili moduły kożystam z polecenia
+	Get-Module -ListAvailable (wychodzi na to że jest to spora lista )
+* Listę tą możemy filtrować/przetwarzać
+	np aby wyszukać tylko elementy których wersja =<  2.0.0.0 użyjemy polecenia:
+		Get-Module -ListAvailable | ? {$_.Version -le "2.0.0.0"} 
+? = Where-Object
+% = While-Object
+lt = lower then
+le = lower-equal
+gt = greater than
+ge = greater-equal
+	Wszelkie filtrowania będa bardziej czytelne gdy umieścimy je w tabeli = Out-GridView
+        	  Get-Module -ListAvailable | where-object {$_.Version -le "2.0.0.0"}  | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*")  -or ($_.Name -like "Get-*" )} | Out-GridView
+	Mozemy tez zapisac wynik do pliku :
+ 		| Out-File $env:TEMP\$nazwaPliku
+	Lup po prostu przetworzyć i nie wyswietlac
+		| Out-Null
+* Moduł bitTransfer słuzy do zarzadzania przesyłem danych w tle , importujemy go :
+		Import-Module BitTransfer
+Import-Module = ipmo
+*Moduł ten wykorzystuje do pobrania pliku i zapisania go w wybranej lokalizacji
+	Start-BitsTransfer -source $url -description Desktop/UKOS
+*Do mierzenia czasu wykonywania polecen służy Measure-Command
+* Get-ChildItem = ls
+* PS to konsola można wiec w niej za pomocą "&" uruchamiac programy np:
+	& C:\Windows\notepad.exe
+
+ 
+
