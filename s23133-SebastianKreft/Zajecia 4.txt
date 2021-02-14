@@ -1,0 +1,43 @@
+05.12.2020
+
+Zadanie 1:
+
+sciezka wzgledna: cd ../../../kot/ma/ale
+sciezka bezwzgledna: cd ~/temp/ukos/kot/ma/ale
+
+Zadanie 2:
+
+Uzywajac komendy: mkdir -p ~/tmp/ukos/kot/ma/ale/jan/kowalski
+
+Zadanie 3:
+
+Uzywajac: mv ~/tmp/ukos/kot/ma/ale ~/tmp/ukos/ala/i
+
+Zadanie 4:
+
+Uzywajac kill "PID"
+
+Zadanie 5:
+
+Komenda: ls | grep al*
+
+Zadanie 6:
+
+Komenda: chmod 751 ala
+			chmod u=rwx,g=rx,o=x ala
+			
+Zadanie 7:
+
+Uzywając: ls > plik
+
+Zadanie 8:
+
+Brak praw dostepu, wyczerpanie przestrzeni dyskowej przydzielonej do uzytkownika
+
+Zadanie 9:
+
+Klawisz TAB
+
+Zadanie 10:
+
+Uzywajac: bg lub & 

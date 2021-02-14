@@ -1,0 +1,46 @@
+Zajecia 7 (30.01.2021) i 8 (13.02.2021) Powershell
+
+1. Zeby nie miec problemow z uruchamianiem skryptow nalezy zmienic domyslne ustawienia wykonywania.
+	Najpierw trzeba uruchomic Powershell jako administrator, uzyc 
+	polecenia  PS C:\Users\user> Set-ExecutionPlicy Bypass i zatwierdzic zmiane.
+
+2. Komenda get-help umozliwia wyswietlenie przydatnych informacji o komendach
+	Dopisanie -Examples wyswietla przyklady uzycia komendy na praktycznym przykladzie
+
+3. Komendy w Powershellu sa skonstruowane wedlug schematu: CoMaZrobic-NaCzymMaZrobic, np: Copy-Item, Get-History itp.
+
+4. Znak "|" to potok. Polecenie wpisane po nim zostanie wykonane dla danych wpisanych przed nim.
+	Przydatne np. przy wyswietlaniu listy, do zawezania zakresu poszukiwan.
+	np. Get-Module -ListAvailable wyswietli liste modulow, a Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"}
+	wyswietli liste modolow o numerze wersji wiekszym lub rownym 2.0.0.0 (litery -ge w poleceniu to skroty od greater oraz equal)
+
+5. "?" to skrot od polecenia Where-Object, a "%" to skrot od While-Object
+
+6. Modul BitsTransfer sluzy do zarzadzania przesylem danych. Uzywajac komendy: 
+	Start-BitsTransfer -Source http://..... -Destination D:\ -Credential $cred -Authentication Negotiate
+	
+	Mozemy pobrac plik z internetu. Start-BitsTransfer zaczyna pobieranie; -Source http://... to adres pliku który, chcemy pobrac;
+	-Destination D:\... to sciezka do miejsca w ktorym chcemy zapisac plik; -Credential $cred -Authentication Negotiate - uzywa danych uwierzytelniajacych zapisanych do zmiennej
+	w celu pobrania pliku (uzywane jesli wymagane jest podanie hasla, np. pobranie czegos z uczelnianego serwera)
+	
+	Mozemy rowniez pobierac w sposob asynchroniczny - konsola nie jest wtedy blokowana 
+	Get-BitsTransfer pokazuje stan transferu
+	Po pobraniu pliku uzywamy komendy Complete-BitsTransfer -BitsJob $job, zeby plik pojawił sie w podanej wczesniej sciezce
+	
+
+7. Przy pomocy $cred = Get-Credential, mozemy zapisac do zmiennej nasz login i haslo by nie wpisywac go za kazdym razem
+
+8. Komenda Measure-Command umozliwia zmiezenie czasu w jakim wykonala sie komendach
+
+9. &(ampersand) i sciezka dostepu wraz z nazwa pliku umozliwia uruchomienie programu, np: & C:\Windows\Spotify.exe
+
+10. Get-PSDrive wyswietla nam informacje o dyskach i rejestrach. Mozemy do nich wchodzic i sprawdzac ich zawartosc tak jak w Bashu.
+	
+11. Do uzyskania tych informacji mozemy równiez skozystac z WMI (Windows Management Instrumentation) - jest to zestaw protokolow i rozszerzen 
+	ktore umozliwia zarzadzanie i dostep do zasobow komputera.
+	
+	W tym miejscu mozna powiedziec, zeby uwazac co sie robi, zeby sobie czegos przypadkiem nie odinstalowac.
+
+12. Mozemy tworzyc tez wlasne funkcje, ktore nastepnie wywolujemy, np. wyskakujace pop-upy z wybranym prez nas tekstem.
+	
+

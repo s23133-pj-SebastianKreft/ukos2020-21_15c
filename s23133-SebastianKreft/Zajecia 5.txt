@@ -1,0 +1,15 @@
+19.12.2020
+
+-GitHub to nie jedyny system kontroli wersji z którego można korzystac.
+ Innym przykladem jest BitBucket, ktorego platna wersja jest godna uwagi
+
+- Najbardziej prymitywnym sposobem jest system z nazywaniem kolejnych plikow 
+	z wersjami numerami i datami,
+    ale bardzo szybko mozna sie pogubic.
+
+- Mozemy kozystac z edytorow konsolowych i okienkowych.
+	Moga posiadac ulatwienia, np. w postaci kolorowania skladni
+
+- Omowilismy licencje oprogramowania. Warto wiedziec z jakiego oprogramowania sie korzysta, 
+	zeby uniknac nieprzyjemnych sytuacji, np. stworzylismy produkt komercyjny na oprogramowaniu 
+	ktorego licencja na to nie zezwala
